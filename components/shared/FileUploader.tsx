@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, Dispatch, SetStateAction } from 'react'
-import type { FileWithPath } from '@uploadthing/react'
+import { FileWithPath } from 'react-dropzone';
 import { useDropzone } from '@uploadthing/react/hooks'
 import { generateClientDropzoneAccept } from 'uploadthing/client'
 
@@ -38,7 +38,7 @@ export function FileUploader({ imageUrl, onFieldChange, setFiles }: FileUploader
                         alt="image"
                         width={250}
                         height={250}
-                        className="w-full object-cover object-center"
+                        className="w-full object-fill object-center"
                     />
                 </div>
             ) : (
