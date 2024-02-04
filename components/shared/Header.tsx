@@ -8,10 +8,10 @@ import MobileNav from './MobileNav'
 
 const Header = () => {
     return (
-        <header className='w-full border-b'>
+        <header className='w-full bg-primary-50 bg-dotted-pattern bg-cover'>
             <div className='wrapper flex items-center justify-between'>
                 <Link href="/" className='w-36'>
-                    <Image src="/assets/images/logo.svg" width={128} height={38} alt='Next Event Logo' />
+                    <Image src="/assets/images/logo.png" width={128} height={38} alt='Logo' />
                 </Link>
 
                 <SignedIn>
@@ -20,7 +20,7 @@ const Header = () => {
                     </nav>
                 </SignedIn>
 
-                <div className='flex w-32 justify-end gap-3'>
+                <div className='flex w-32 justify-end gap-3 '>
                     <SignedIn>
                         <UserButton afterSignOutUrl='/' />
                         <MobileNav />

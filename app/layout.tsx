@@ -10,10 +10,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Next Event",
-  description: "An event management platform",
+  title: "Locally",
+  description: "A place to plan your next event.",
   icons: {
-    icon: "/assets/images/logo.svg"
+    icon: "/assets/images/logo.png"
   }
 };
 
